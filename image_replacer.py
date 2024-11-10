@@ -7,9 +7,9 @@ image3_path = "phone_screenshot.png"  # Third image to insert
 
 # Coordinates for placeholders in the template image (x, y, width, height)
 placeholders = [
-    (238, 380, 589, 369),  # Placeholder 1 - Laptop
-    (757, 538, 273, 391),  # Placeholder 2 - Tablet
-    (553, 623, 162, 350),  # Placeholder 3 - Phone
+    (2393, 3810, 5885, 3685),  # Placeholder 1 - Laptop
+    (7589, 5390, 2714, 3902),  # Placeholder 2 - Tablet
+    (5541, 6243, 1615, 3495),  # Placeholder 3 - Phone
 ]
 
 
@@ -47,6 +47,10 @@ def create_composite_image(template_path, screenshot_paths, output_path):
 
         # Save the final composite image with lossless PNG format to preserve quality
         final_image.save(output_path, format="PNG")
+        # with Image.open(output_path) as img:
+        #     #img_resized = img.resize((1024,1024), Image.LANCZOS)
+        #     img.thumbnail((1024,1024), Image.LANCZOS)
+        #     img.save(output_path, format="PNG")
         print(f"Image saved as {output_path}")
 
 # Uncomment below if you want to run this script directly with example files
