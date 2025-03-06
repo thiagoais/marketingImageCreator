@@ -66,5 +66,5 @@ Contributions are welcome! If you have any ideas, suggestions, or bug reports, p
 
 ## License
 
-(Specify the license under which the project is released, e.g., MIT License)
+Free to use for any purpose
 
